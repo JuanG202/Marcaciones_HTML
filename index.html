@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="/assest/identificacion-biometrica.png">
+  <link rel="stylesheet" href="./styles_1.css">
+  <title>Registro Marcaciones</title>
+</head>
+<body>
+  <section>
+    <div class="card">
+      <h1 class="title">REGISTRO MARCACIONES</h1>
+
+      <form id="formularioAseo">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cedula">Cédula:</label>
+          <input type="text" id="cedula" name="cedula" required>
+        </div>
+
+        <div class="form-group">
+          <label for="agencia">Agencia:</label>
+          <input type="text" id="agencia" name="agencia" required>
+        </div>
+
+        <div class="form-group">
+          <label for="horaEntrada">Fecha de entrada:</label>
+          <input type="date" id="horaEntrada" name="horaEntrada" required>
+        </div>
+
+        <div class="form-group">
+          <label for="horaSalida">Fecha de salida:</label>
+          <input type="date" id="horaSalida" name="horaSalida" required>
+        </div>
+
+        <div class="form-group">
+          <label for="observaciones">Observaciones:</label>
+          <textarea id="observaciones" name="observaciones" rows="4" placeholder="Escribe aquí..."></textarea>
+        </div>
+
+        <div class="enviar">
+          <button type="button" id="btnEnviar" onclick="enviarFormulario()">Enviar</button>
+        </div>
+        <p class="nota-creador">Created by Juan Pablo Granja</p>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>
